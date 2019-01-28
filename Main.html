@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Main.css">
+</head>
+<body>
+
+	<button class="tablink" id="BingoTab" onclick="openPage('Bingo', this)">Bingo</button>
+	<button class="tablink" id="BingoListTab" onclick="openPage('BingoList', this);loadBingo();">Bingo Shop List</button>
+
+	<div id="Bingo" class="tabcontent">
+		<p>"Bingo"s in a radius of 5km.</p>
+		<div id="map">
+		</div>
+		<div id="search">
+			<input type="text" name="addr" value="Bingo" id="addr" size="10" readonly/>
+			<button type="button" onclick="addr_search();">Search</button>
+		</div>
+		<p><button type="button" onclick="save()">SAVE Bingo shops</button> 
+	</div>
+
+	<div id="BingoList" class="tabcontent">
+		<h3>Bingo Shop List</h3>
+		<div id="results"></div>
+	</div>
+
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+	integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+	integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+	crossorigin=""></script>
+	<script src="Main.js"></script>
+															<!-- Include jquery, leaflet.js and Main.js file -->
+</body>
+</html> 

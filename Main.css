@@ -1,0 +1,52 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+/* Set tab/background color */
+#BingoTab {background-color: #69e58d;}
+#BingoListTab {background-color: #69a9e5;}
+#Bingo {background-color: #69e58d;}
+#BingoList {background-color: #69a9e5;display: none;}
+
+
+#map{
+	height: 500px;
+	width: 500px;
+	border: 5px solid #FFF;
+    }
+	
+div#search {
+  left: 40px;
+  padding: 10px;
+}
+div#search input {
+  width: 200px;
+}
+div#results {
+  font-style: sans-serif;
+  color: black;
+  font-size: 75%;
+}
